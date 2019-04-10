@@ -7,5 +7,6 @@ target 'RatingsPractice' do
 
   # Pods for RatingsPractice
 pod 'Cosmos'
+pod 'TinyConstraints'
 
 end

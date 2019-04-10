@@ -13,6 +13,8 @@
 		45864F3E2256B7F6005FDBD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45864F3C2256B7F6005FDBD5 /* Main.storyboard */; };
 		45864F402256B7FC005FDBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45864F3F2256B7FC005FDBD5 /* Assets.xcassets */; };
 		45864F432256B7FC005FDBD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45864F412256B7FC005FDBD5 /* LaunchScreen.storyboard */; };
+		45864F4D225BE136005FDBD5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45864F4C225BE136005FDBD5 /* SecondViewController.swift */; };
+		45864F4F225BF57E005FDBD5 /* SecondVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45864F4E225BF57E005FDBD5 /* SecondVCTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		45864F3F2256B7FC005FDBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45864F422256B7FC005FDBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45864F442256B7FC005FDBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45864F4C225BE136005FDBD5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		45864F4E225BF57E005FDBD5 /* SecondVCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVCTableViewCell.swift; sourceTree = "<group>"; };
 		AF50A59F506188C84A61B9C7 /* Pods-RatingsPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RatingsPractice.release.xcconfig"; path = "Target Support Files/Pods-RatingsPractice/Pods-RatingsPractice.release.xcconfig"; sourceTree = "<group>"; };
 		C9143AC8278E2A3AF1800E85 /* Pods-RatingsPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RatingsPractice.debug.xcconfig"; path = "Target Support Files/Pods-RatingsPractice/Pods-RatingsPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,8 @@
 			children = (
 				45864F382256B7F6005FDBD5 /* AppDelegate.swift */,
 				45864F3A2256B7F6005FDBD5 /* ViewController.swift */,
+				45864F4C225BE136005FDBD5 /* SecondViewController.swift */,
+				45864F4E225BF57E005FDBD5 /* SecondVCTableViewCell.swift */,
 				45864F3C2256B7F6005FDBD5 /* Main.storyboard */,
 				45864F3F2256B7FC005FDBD5 /* Assets.xcassets */,
 				45864F412256B7FC005FDBD5 /* LaunchScreen.storyboard */,
@@ -85,7 +91,6 @@
 				C9143AC8278E2A3AF1800E85 /* Pods-RatingsPractice.debug.xcconfig */,
 				AF50A59F506188C84A61B9C7 /* Pods-RatingsPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,12 +195,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RatingsPractice/Pods-RatingsPractice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -209,7 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45864F4D225BE136005FDBD5 /* SecondViewController.swift in Sources */,
 				45864F3B2256B7F6005FDBD5 /* ViewController.swift in Sources */,
+				45864F4F225BF57E005FDBD5 /* SecondVCTableViewCell.swift in Sources */,
 				45864F392256B7F6005FDBD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
